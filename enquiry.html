@@ -27,7 +27,7 @@
     <p>Complete the form below and a member of our team will contact you.</p>
     <p>Fields marked with an asterisk (*) are required.</p>
 
-    <form action="#" method="post">
+    <form id="enquiry-form" action="#" method="post" novalidate>
         <div>
             <label for="car">Vehicle</label>
             <select id="car" name="car">
@@ -41,17 +41,20 @@
 
         <div>
             <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required>
+            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required aria-describedby="name-error">
+            <p class="error" id="name-error"></p>
         </div>
 
         <div>
             <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
-            <input type="text" id="email" name="email" required>
+            <input type="text" id="email" name="email" required aria-describedby="email-error">
+            <p class="error" id="email-error"></p>
         </div>
 
         <div>
             <label for="phone">Telephone</label>
-            <input type="text" id="phone" name="phone">
+            <input type="text" id="phone" name="phone" aria-describedby="phone-error">
+            <p class="error" id="phone-error"></p>
         </div>
 
         <div>
@@ -74,6 +77,8 @@
 
         <button type="submit">SUBMIT</button>
     </form>
+
+    <p id="form-status" role="status"></p>
 
     <p>We aim to respond within two working days.</p>
 </main>
