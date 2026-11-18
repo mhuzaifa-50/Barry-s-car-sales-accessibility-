@@ -25,7 +25,7 @@
 <main>
     <h2>Vehicle enquiry</h2>
     <p>Complete the form below and a member of our team will contact you.</p>
-    <p>Fields marked in red are important.</p>
+    <p>Fields marked with an asterisk (*) are required.</p>
 
     <form action="#" method="post">
         <div>
@@ -40,13 +40,13 @@
         </div>
 
         <div>
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith">
+            <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required>
         </div>
 
         <div>
-            <label for="email">Email address</label>
-            <input type="text" id="email" name="email">
+            <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="email" name="email" required>
         </div>
 
         <div>

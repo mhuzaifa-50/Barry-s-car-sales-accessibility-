@@ -69,3 +69,7 @@ footer {
     margin: auto;
     font-size: 12px;
 }
+
+.required {
+    color: #b00020;
+}
