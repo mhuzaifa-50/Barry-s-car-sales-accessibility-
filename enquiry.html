@@ -42,19 +42,19 @@
 
         <div>
             <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required aria-describedby="name-error">
+            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" autocomplete="name" required aria-describedby="name-error">
             <p class="error" id="name-error"></p>
         </div>
 
         <div>
             <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
-            <input type="text" id="email" name="email" required aria-describedby="email-error">
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
             <p class="error" id="email-error"></p>
         </div>
 
         <div>
             <label for="phone">Telephone</label>
-            <input type="text" id="phone" name="phone" aria-describedby="phone-error">
+            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error">
             <p class="error" id="phone-error"></p>
         </div>
 
