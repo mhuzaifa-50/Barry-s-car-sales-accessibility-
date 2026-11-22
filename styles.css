@@ -113,3 +113,15 @@ footer {
         padding: 15px;
     }
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin: 0 8px 10px 0;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 20px;
+}
