@@ -1,5 +1,11 @@
 const form = document.querySelector("#enquiry-form");
 
+
+const carSelect = document.querySelector("#car");
+const chosenCar = new URLSearchParams(window.location.search).get("car");
+if (chosenCar && [...carSelect.options].some((option) => option.value === chosenCar)) {
+    carSelect.value = chosenCar;
+    }
 if (form) {
     const nameInput = document.querySelector("#name");
     const emailInput = document.querySelector("#email");
