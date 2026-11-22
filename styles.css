@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial;
     margin: 0;
@@ -24,7 +30,7 @@ nav a {
 }
 
 main {
-    width: 900px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -32,6 +38,8 @@ main {
 
 img {
     width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 table {
@@ -50,7 +58,8 @@ label {
 input,
 select,
 textarea {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 10px;
 }
 
@@ -65,8 +74,9 @@ button {
 }
 
 footer {
-    width: 900px;
+    max-width: 900px;
     margin: auto;
+    padding: 0 20px;
     font-size: 12px;
 }
 
@@ -81,4 +91,15 @@ footer {
 
 #form-status {
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        margin: 0;
+        padding: 15px;
+    }
 }
