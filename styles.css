@@ -125,3 +125,16 @@ input[type="radio"] + label {
     display: inline-block;
     margin-right: 20px;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #14365d;
+    outline-offset: 2px;
+}
+
+header a:focus-visible {
+    outline-color: #ffbf47;
+}
