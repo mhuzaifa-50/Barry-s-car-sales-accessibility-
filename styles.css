@@ -138,3 +138,17 @@ textarea:focus-visible {
 header a:focus-visible {
     outline-color: #ffbf47;
 }
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    padding: 8px 12px;
+    background: white;
+    color: #14365d;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
