@@ -152,3 +152,8 @@ header a:focus-visible {
 .skip-link:focus {
     top: 10px;
 }
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+}
