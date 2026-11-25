@@ -61,7 +61,7 @@ if (form) {
             return;
         }
 
-        status.textContent = "Thank you, " + name + ". Your enquiry has been sent. We aim to respond within two working days.";
+        status.textContent = "Thank you, " + name + ". Your enquiry has been sent.";
         form.reset();
     });
 }
