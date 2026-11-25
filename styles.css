@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: #eeeeee;
 }
@@ -80,14 +80,16 @@ textarea {
 button {
     background: #14365d;
     color: white;
-    padding: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 footer {
     max-width: 900px;
     margin: auto;
-    padding: 0 20px;
-    font-size: 12px;
+    padding: 20px;
+    font-size: 14px;
 }
 
 .required {
@@ -116,8 +118,10 @@ footer {
 
 input[type="checkbox"],
 input[type="radio"] {
-    width: auto;
+    width: 20px;
+    height: 20px;
     margin: 0 8px 10px 0;
+    vertical-align: middle;
 }
 
 input[type="checkbox"] + label,
@@ -156,4 +160,17 @@ header a:focus-visible {
 nav a[aria-current="page"] {
     font-weight: bold;
     text-decoration-thickness: 3px;
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cars img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 75%;
 }
